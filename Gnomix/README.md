@@ -13,9 +13,10 @@ You can split and run each files seperately and merge before the next step (but 
 After Running the files through TOPMed Imputation Server or another imputation and phasing system you will need to either use the Gnomix pretrained models (where you do not need reference files)
 If using the default model provided by Gnomix test first with chr22 and see that you have AT LEAST 80% in the Percentage of model SNPs covered by query file.
 
-This is an Example of a FAILED Gnomix analysis - with ONLY 0.25% SNPs covered in the query file this gives very inaccurate results!!!
+This is an Example of a FAILED Gnomix analysis - with **ONLY 0.25% SNPs covered in the query file this gives very inaccurate results!!!**
 ![image](https://github.com/user-attachments/assets/48e48aba-40b0-47ca-ab92-f5dfe3ed79ba)
-Make sure your snpIDs are consistent with the reference panel/ model!
+
+**Make sure your snpIDs are consistent with the reference panel/ model!**
 
 Using default pretrained model (no need for references). Note you need to run this for each chromosome of your data. 
 $ python3 gnomix.py <query_file> <output_folder> <chr_nr> <phase> <path_to_model> 
