@@ -7,3 +7,7 @@ Once we had the QCed PLINK files, we ran code to split the bed files into vcf pe
 
 ####ADD screenshot here
 
+
+
+#### Move and later
+![LAI Pipeline SupplementalFigure2](https://github.com/user-attachments/assets/3d20e1fc-b2f7-4468-ab7e-a6704d0a8b15)
