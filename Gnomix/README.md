@@ -1,8 +1,10 @@
 For the Local Ancestry Inference Proof of Concept we are only using Chr19 (as that is the main chromosome of interest for AD)
 
 NOTE: Gnomix requires a LARGE amount of Ram make sure you have a computer, cluster or VM with at least 120GB if you are going to run analysis with samples in the thousands.
-For our case with all the participants and 120GB the ALFA study (larger of the two) was 2483 participants took 67GB of Ram to analyze Chr19 (more for the larger chormosomes) with the Phasing turned on (mandatory for this pipeline)
-running Gnomix with the pretrained model took about 5hours on my large VM of 120GB capacity. 
+For our case with all the participants and 120GB the ALFA study (larger of the two) was 2483 participants took 67GB of Ram to analyze Chr19 (more for the larger chormosomes) with the Phasing turned on (mandatory for this pipeline) running Gnomix with the pretrained model took about 5hours on my large VM of 120GB capacity. (Check your capacity with command: lscpu in bash).
+lscpu        # Shows detailed information about the CPU
+free -h      # Shows information about memory usage
+
 
 You can split and run each files seperately and merge before the next step (but not recommended or done in this analysis). 
 
