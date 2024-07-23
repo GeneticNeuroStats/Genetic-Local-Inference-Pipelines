@@ -12,7 +12,6 @@ The project is split into 4 models with two cohorts: ALFA and ADNI, and two inde
 | ADNI w THV |Top Chr 19 SNPs of Interest, Manhattan Plot, PCA Diagram |Top Chr 19 SNPs of Interest, Manhattan Plot, PCA Diagram   |Top Chr 19 SNPs of Interest, Bar Chart of Ancestries, Manhattan Plots per Ancestry, PCA Diagram |
 | ADNI w AB |Top Chr 19 SNPs of Interest, Manhattan Plot, PCA Diagram |Top Chr 19 SNPs of Interest, Manhattan Plot, PCA Diagram   |Top Chr 19 SNPs of Interest, Bar Chart of Ancestries, Manhattan Plots per Ancestry, PCA Diagram |
 
-
 The main LAI pipeline will focus on the use of the tools TOPMed Imputation Server (https://imputation.biodatacatalyst.nhlbi.nih.gov/), Gnomix (https://github.com/AI-sandbox/gnomix), and TractoR (https://github.com/Atkinson-Lab/Tractor), and analysis with various tools and packages in R (can see more detail in the R code).
 
 The Global Ancestry (GA) Pipeline will be similar using Neural Admixture, also by the labs at Stanford and key creators from Gnomix (https://github.com/AI-sandbox/neural-admixture) and NOT using TractoR.
