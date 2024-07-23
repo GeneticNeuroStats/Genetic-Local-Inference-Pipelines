@@ -23,11 +23,11 @@ $ python3 gnomix.py <query_file> <output_folder> <chr_nr> <phase> <path_to_model
 
 **Note for this pipeline you MUST have <phase> as TRUE as you will need the vcf file to be able to continue with TractoR.**
 
-As I had little success with the refernce SNPs in the pretrained models (low SNP coverage in the query file) we decided to restart and take our array data (Had been QCed in plink (see TOPMed README file) and made into .bed, .bim, .fam files, then transformed into vcf files per choromosome in order to upload, but otherwise raw) and reran through TOPMed Imputation Server, to get the raw SNPIDs, then with an email to 	topmed.omics@umich.edu to attain the reference panel 
+As I had little success with the refernce SNPs in the pretrained models (low SNP coverage in the query file) we decided to restart and take our array data (Had been QCed in plink (see TOPMed README file) and made into .bed, .bim, .fam files, then transformed into vcf files per choromosome in order to upload, but otherwise raw) and reran through TOPMed Imputation Server, to get the raw SNPIDs, then with an email to 	topmed.omics@umich.edu to attain the reference file, genetic map file, and sample map file. 
 
 Using the training file
 
 $ python3 gnomix.py <query_file> <output_folder> <chr_nr> <phase> <genetic_map_file> <reference_file> <sample_map_file>
 
-To get the reference file, the genetic map file, and the sample file, it is best to contact or find the files you used with the Imputation Server, and make sure to make NO CHANGES to the SNPIDs in your post imputation vcf files.
+**Note: To get the reference file, the genetic map file, and the sample file, it is best to contact or find the files you used with the Imputation Server, and make sure to make NO CHANGES to the SNPIDs in your post imputation vcf files.**
 
