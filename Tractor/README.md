@@ -18,7 +18,7 @@ WAS=7: West Asian ancestry is coded as 7
 
 So if you are using this pipeline with the Gnomix pretrained modesl use --num-ancs = 8
 
-If you are using a customized Reference Panel then use the number of ancestries in said panel and more importantly sample mapping file, where you set the ancestries.
+If you are using a customized Reference Panel then use the number of ancestries in said panel and **more importantly sample mapping file, where you set the ancestries.**
 
 
 
