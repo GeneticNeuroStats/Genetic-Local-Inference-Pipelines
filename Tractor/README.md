@@ -20,6 +20,13 @@ So if you are using this pipeline with the Gnomix pretrained modesl use --num-an
 
 If you are using a customized Reference Panel then use the number of ancestries in said panel and **more importantly sample mapping file, where you set the ancestries.**
 
+The second step in our pipeline from tractor is to use the files from the LAI (Gnomix) with the files for Dosage and Haplotype Count to create the Summary Statistics file for the SNPs.
+https://github.com/Atkinson-Lab/Tractor/wiki/Step-3b:-Tractor-GWAS-(Local)
+
+Once you have the Summary Statistics File you can go on to build your Manhattan Plots and get your top SNPs.
+
+
+
 
 
 
