@@ -13,3 +13,10 @@ The project is split into 4 models with two cohorts: ALFA and ADNI, and two inde
 The main LAI pipeline will focus on the use of the tools TOPMed Imputation Server (https://imputation.biodatacatalyst.nhlbi.nih.gov/), Gnomix (https://github.com/AI-sandbox/gnomix), and TractoR (https://github.com/Atkinson-Lab/Tractor), and analysis with various tools and packages in R (can see more detail in the R code).
 
 The Global Ancestry (GA) Pipeline will be similar using Neural Admixture, also by the labs at Stanford and key creators from Gnomix (https://github.com/AI-sandbox/neural-admixture) and NOT using TractoR.
+
+The Main Steps are as follows:
+1. Imputation and Phasing (see Imputation README.md file)
+2. Local Ancestry Inference (see Genomix README.md file)
+3. Extraction of Tracts and Ancestral Dosage (see Tractor README.md file)
+4. Local Ancestry Enhanced GWAS Summary Creation (see Tractor README.md file)
+5. Creation of the Manhattan Plots and Top SNPs (see Manhattan Plots and Top SNPs README.md file)
