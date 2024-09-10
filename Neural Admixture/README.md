@@ -3,7 +3,7 @@ https://github.com/AI-sandbox/neural-admixture
 
 ### Training Neural-Admixture Model
 
-To train the Neural-Admixture model with `k=4`, use the following command:
+To train the Neural-Admixture model with `k=4`, use the following command in bash:
 
 ```bash
 neural-admixture train --k 4 --path_to_file/ALFA.bed --save_dir  path_to_file/NEURAL_ADMIXTURE_OUTPUTS/ --name ALFA_k4 --seed 42
@@ -11,7 +11,9 @@ neural-admixture train --k 4 --path_to_file/ALFA.bed --save_dir  path_to_file/NE
 
 Here you require a bed file for your input data, a cluster number (k), a directory to save the file (--save_dir), the name of the output file (--name), and a seed (--seed)
 
-For the cluster it is easiest to guess and visulize (see R code below, you will use the .Q output file from Neural Admixture for this). I started with k=8 to see how the clusters compared to the 8 genetic ancestries given in the Gnomix pretrained model
+For the cluster it is easiest to guess and visulize (see R code below, you will use the .Q output file from Neural Admixture for this). I started with k=8 to see how the clusters compared to the 8 genetic ancestries given in the Gnomix pretrained model, but as there was not enough diversity between the 8 clusters I showed just 4 clusters. You can use equations or models to calculate the best k value as well.
+
+I used the following R code to visualize the clusters in a PCA scatter plot
 
 ```R
 library(popkin)
