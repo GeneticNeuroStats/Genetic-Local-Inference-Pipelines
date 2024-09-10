@@ -17,6 +17,12 @@ See the chart below for a summary:
 The following linear model equations were used for the analysis:
 ![image](https://github.com/user-attachments/assets/6766234f-eae6-472a-bc54-2c512ef61710)
 
+For the Global Ancestry ( the clusters created with Neural Admixture tool) the SNPs, refers specifically to those located on chromosome 19. The GA cluster represents the genetic ancestry group associated with each individual, 
+allowing for a more precise analysis of how genetic ancestry influences the relationship between chromosome 19 SNPs and the phenotypes.
+
+For the LAI model the  equation, 𝐿𝐴𝐼𝑘 where k=8, are the components derived from LA analysis, capturing the ancestry-specific genetic structure, and enhancing the understanding of how LA affects the genetic associations with AD-related traits.
+
+
 The main LAI pipeline will focus on the use of the tools TOPMed Imputation Server (https://imputation.biodatacatalyst.nhlbi.nih.gov/), Gnomix (https://github.com/AI-sandbox/gnomix), and TractoR (https://github.com/Atkinson-Lab/Tractor), and analysis with various tools and packages in R (can see more detail in the R code).
 
 The Global Ancestry (GA) Pipeline will be similar using Neural Admixture, also by the labs at Stanford and key creators from Gnomix (https://github.com/AI-sandbox/neural-admixture) and NOT using TractoR.
