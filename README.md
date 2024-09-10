@@ -23,3 +23,6 @@ The Main Steps of the Local Ancestry Inference are as follows:
 
 ![image](https://github.com/user-attachments/assets/904d5659-686b-4e39-905a-855659a4337c)
 
+![image](https://github.com/user-attachments/assets/6766234f-eae6-472a-bc54-2c512ef61710)
+
+
