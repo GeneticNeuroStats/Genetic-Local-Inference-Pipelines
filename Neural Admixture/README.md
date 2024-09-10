@@ -7,6 +7,7 @@ To train the Neural-Admixture model with `k=4`, use the following command:
 
 ```bash
 neural-admixture train --k 4 --path_to_file/ALFA.bed --save_dir  path_to_file/NEURAL_ADMIXTURE_OUTPUTS/ --name ALFA_k4 --seed 42
+```
 
 Here you require a bed file for your input data, a cluster number (k), a directory to save the file (--save_dir), the name of the output file (--name), and a seed (--seed)
 
@@ -29,6 +30,7 @@ Q <- read.table("path_to_file/ALFA_19_4B.4.Q", header = TRUE)
    geom_point() +
    theme_minimal() +
    labs(title = "PCA Plot", x = "Principal Component 1", y = "Principal Component 2", color = "Cluster")
+```
 
 ![image](https://github.com/user-attachments/assets/5a98cd5d-84ba-4cce-b3f9-55c585e410ee)
 
