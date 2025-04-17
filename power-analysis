@@ -1,0 +1,37 @@
+library(genpwr)
+
+# Define parameters
+effect_size <- 0.3     # standardized effect size (beta)
+maf <- 0.1             # minor allele frequency
+n_values <- c(50, 100, 150, 200)  # sample sizes per ancestry group
+alpha <- 5e-4          # relaxed significance threshold
+model_type <- "additive"
+
+# Compute power for different sample sizes
+power_results <- sapply(n_values, function(n) {
+  genpwr.calc(
+    model = "linear",
+    geffect = effect_size,
+    MAF = maf,
+    N = n,
+    alpha = alpha,
+    model.type = model_type,
+    verbose = FALSE
+  )$power
+})
+
+# Combine into a data frame for display
+power_df <- data.frame(
+  SampleSize = n_values,
+  Power = round(power_results, 3)
+)
+
+print(power_df)
+
+# Optional: simple plot
+plot(power_df$SampleSize, power_df$Power, type = "b",
+     main = "Power vs Sample Size (MAF=0.10, beta=0.3, alpha=5e-4)",
+     xlab = "Effective Sample Size (per ancestry)",
+     ylab = "Power",
+     pch = 16)
+abline(h = 0.8, col = "red", lty = 2)  # 80% power threshold
